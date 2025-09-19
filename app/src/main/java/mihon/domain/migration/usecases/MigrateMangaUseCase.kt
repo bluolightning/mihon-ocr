@@ -89,7 +89,7 @@ class MigrateMangaUseCase(
             }
 
             // Update categories
-            if (MigrationFlag.CATEGORY in flags) {
+            if (MigrationFlag.CHAPTER in flags) {
                 val categoryIds = getCategories.await(current.id).map { it.id }
                 setMangaCategories.await(target.id, categoryIds)
             }

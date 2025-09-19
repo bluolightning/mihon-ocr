@@ -57,7 +57,7 @@ fun ExtensionRepoCreateDialog(
         },
         text = {
             Column {
-                Text(text = stringResource(MR.strings.action_add_repo_message, stringResource(MR.strings.app_name)))
+                Text(text = stringResource(MR.strings.action_add_repo_message))
 
                 OutlinedTextField(
                     modifier = Modifier
